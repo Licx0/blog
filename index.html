@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <audio autoplay="autoplay" src="./sound/世界这么大还是遇见你.mp3"></audio>
+<!--    <embed src="./sound/世界这么大还是遇见你.mp3" hidden="true" autostart="true" loop="true">-->
     <script src="./js/jquery-1.10.2.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/canvas.js"></script>
     <script src="./js/deepCopy.js"></script>
     <script src="./js/Firework.js"></script>
+
 </head>
 <body>
+
 <canvas id="canvas" width="1905" height="895"></canvas>
 </body>
 
@@ -22,7 +26,7 @@
         //烟火形状                                                        圆形                                                              椭圆形                                                          爱心形
         fireworkTypeList = [createCircleFirework, createEllipseFirework, createHeartFirework],
         totalNum = 0,//发射烟火的总数量
-        surprise_num = 25,//当发射烟火数量达到25时,发射生日快乐字样的烟火
+        surprise_num = 40,//当发射烟火数量达到25时,发射生日快乐字样的烟火
         flag = true;//是否发射生日快乐字样的烟火
     canvas.width = $(window).width() - 15;
     canvas.height = $(window).height() - 20;
